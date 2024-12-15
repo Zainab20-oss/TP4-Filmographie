@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #4CAF50;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.recherche {
+    display: flex;
+    margin-left: 600px;
+    margin-top: -50px;
+}
+
+.recherche input[type="text"] {
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+}
+
+.recherche input[type="button"] {
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    background-color: #ddd;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.recherche input[type="button"] :hover {
+    background-color: #ccc;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center;    /* Centre verticalement si nécessaire */
+    gap: 20px;              /* Espace entre les cartes */
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.titre {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.genre, .anne, .note {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.Read {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.Read:hover {
+    background-color: #45a049;
+}
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.trie {
+    position: fixed;
+    top: 600px;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.Fav{
+    position: fixed;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.Ajt{
+    position: fixed;
+    top: 70px;
+    left: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    width: 300px;
+    max-width: 80%;
+    text-align: center;
+}
+
+.popup h2 {
+    margin-top: 0;
+}
+
+.popup .close-btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup .close-btn:hover {
+    background-color: #e57373;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
