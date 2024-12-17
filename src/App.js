@@ -134,7 +134,7 @@ function App() {
       <Rechercher onSearch={handleSearch} />
       <Trie onClickA={handleTrieA} onClickN={handleTrieN} />
       <ShowFav onClick={handleShowFavoritesPopup} />
-      <ListeFilm films={film} onSelectFilm={setSelectedFilm} />
+      <ListeFilm films={currentPosts} onSelectFilm={setSelectedFilm} />
       {selectedFilm && (
         <MovieDetails
           film={selectedFilm}
